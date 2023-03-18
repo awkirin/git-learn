@@ -4,6 +4,7 @@
   "dependencies": {
     "bootstrap": "^5.2.3",
     "sass": "^1.59.3",
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "bemto.pug": "^2.1.0"
   }
 }
