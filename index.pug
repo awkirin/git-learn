@@ -18,13 +18,13 @@ block content
 
     section.bg-black
         .container.py-5.bg-black
-            +section-content.text-white
+            +section-content.text-white.text-opacity-75
                 +section-title Заголовок секции
                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ea, harum. Dignissimos dolore ea fugit harum, nemo nisi pariatur quas quos veritatis voluptas? Alias eum hic quaerat quisquam, rem repudiandae?
             .row.row-cols-lg-3.g-4
                 each card in [1, 2, 3]
                     div
-                        .card.card-body
+                        .card.card-body.bg-dark.text-white.text-opacity-75
                             h3.card-title=`Заголовок ${card}`
                             p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci architecto at blanditiis deleniti distinctio doloribus et iusto labore, magni maxime minus molestiae, nobis nulla possimus repellendus sit suscipit! Cupiditate.
                             +button-group
