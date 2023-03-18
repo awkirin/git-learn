@@ -1,8 +1,14 @@
 extends pug/layouts/app.pug
 
 block content
-    section.container.py-5
+    section.container.py-3
         +section-title Заголовок секции
-        +button-group
-            +button-primary Купить!
-            +button.btn-secondary Подробнее
+        .row.row-cols-lg-3.g-4
+            each card in [1, 2, 3, 4, 5, 6]
+                div
+                    .card.card-body
+                        h3.card-title=`Заголовок ${card}`
+                        p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci architecto at blanditiis deleniti distinctio doloribus et iusto labore, magni maxime minus molestiae, nobis nulla possimus repellendus sit suscipit! Cupiditate.
+                        +button-group
+                            +button-primary Купить!
+                            +button.btn-secondary Подробнее
